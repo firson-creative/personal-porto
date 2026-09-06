@@ -1,0 +1,533 @@
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.logo {
+    top: 0;
+    width: 10%;
+    height: 100%;
+    font-family: "MuseoModerno", sans-serif;
+    color: rgb(0, 0, 0);
+    display: flex;
+    font-weight: normal;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-nav {
+    top: 0;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    margin: 0px;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+}
+
+.nav-bar li {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+a {
+    border: none;
+    text-decoration: none;
+    color: rgb(0, 4, 7);
+    font-family: "Poiret One", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+li:hover {
+    background-color: grey;
+    color: white;
+    font-weight:  bold;
+}
+
+body {
+    margin-top: 50px;
+}
+
+
+.hero {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-box-a {
+    width: 100%;
+    height: 90%;
+    padding: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+}
+
+.hero-box-a h1 {
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 50px;
+    margin: 0px;
+    width: fit-content;
+    color: rgb(3, 32, 128);
+    padding-left: 10px;
+}
+
+.hero-box-a h1:hover {
+    color: black;
+}
+
+.hero-box-a h5 {
+    font-family: "Poiret One", sans-serif;
+    margin-top: 5px;
+    padding: 0px;
+    padding-left: 10px ;
+}
+
+
+.hero-box-a p {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    padding-left: 10px ;
+}
+
+.picture-box {
+    width: 50%;
+    height: 100%;
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.picture-box img {
+    width: 50%;
+    height: min-content;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.text-box {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.cta {
+    height: 80%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cta-btn {
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.cta-btn:hover {
+    background-color: rgb(0, 0, 0);
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cta-btn a {
+    color: black;
+}
+
+.cta-btn a:hover {
+    color: white;
+}
+
+
+.tagline {
+    width: 100%;
+    height: 300px;
+    top: auto;
+}
+
+.tagline-main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.tagline-text {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagline-text h2 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 3px;
+}
+
+.tagline-text p {
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+
+.idea {
+    top: auto;
+    width: 100%;
+    height: fit-content;
+}
+
+.idea-main {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.idea-img {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.idea-img img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+
+.sefruit-project {
+    width: 100%;
+    height: 400px;
+    top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-box-highlight {
+    width: 300px;
+    height:100%;
+    background-color: rgba(53, 50, 50, 0.226);
+    margin-top: 20px;
+    margin: 4px;
+    border-radius: 15px;
+}
+
+.project-box-highlight:hover {
+    width: 150%;
+    height:100%;
+    background-color: rgba(53, 50, 50, 0.226);
+    margin: 2px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about {
+    top: auto;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    padding-bottom: 10px;
+    flex-direction: column;
+    justify-content: baseline;
+    background-color: black;
+    border-radius: 20px; 
+}
+
+.about-main {
+    top: auto;
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+.short-info {
+    top: auto;
+    width: 98%;
+    height: 100px;
+    padding: 20px;
+    padding-right:0px ;
+}
+
+.about-contact {
+    top: auto;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 50%;
+    height: 100%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.sefruit-text {
+    width: 50%;
+    height: 100%;
+    color: azure;
+    padding-left: 20px;
+}
+
+.sefruit-text h1 {
+    font-family: "MuseoModerno", sans-serif;
+}
+
+.sefruit-text p {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+}
+
+.short-info h2 {
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.short-info li {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 12px;
+    color: aliceblue;
+}
+
+.sosial-btn {
+    width: 20%;
+    background-color: azure;
+    padding: 5px;
+    margin-left: 20px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: space-around;
+    align-self: start;
+}
+
+.sosmed-btn img {
+    width: 20px;
+    height: auto;
+    margin: 2px;;
+}
+
+.sosmed-btn img:hover {
+    width: 25px;
+    height: fit-content;
+    background-color: grey;
+    border-radius: 20px;
+    margin-bottom: -7px;
+}
+
+
+.projects {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.projects-main {
+    top: auto;
+    width: 100%;
+    min-height: 100px;
+    max-height: max-content;
+}
+
+.projects-main h1 {
+    text-align: center;
+}
+
+.filter-section {
+
+}
+
+.list-projects {
+    flex-wrap: wrap;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content:baseline;
+    align-items: center;
+}
+
+.project-box {
+    width: 410px;
+    height: 300px;
+    background-color: bisque;
+    text-align: center;
+    margin: 5px;
+
+}
+
+.skills {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.skills-main {
+    top: auto;
+    width: 100%;
+    min-height: 100px;
+    max-height: max-content;
+    flex-wrap: wrap;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}   
+
+.list-skill {
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+.skill-box {
+    width: 50%;
+    height: 300px;
+    background-color: rgb(243, 239, 239);
+    color: azure;
+    text-align: center;
+    margin: 5px;
+    border: white solid 1px;
+    border-bottom: white solid 2px ;
+}
+
+.experience {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.exp-main {
+    margin-top: 50px;
+    width: 100%;
+    min-height: 100px;
+    max-height: max-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.exp-main h1 {
+    text-align: center;
+    align-items: center;
+}
+
+.exp-box {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-exp {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 3px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.list-exp h1 {
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact {
+
+}
+
+.form-input {
+
+}
+
+.list-contact {
+
+}
+
+.footer-main {
+
+}
+
+.footer-content {
+
+}
+
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
