@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <nav class="nav-bar">
-        <div class="logo">CHENYI</div>
-        <ul class="menu-nav">
+    <nav class="nav-bar liquid-glass" id="nav-bar">
+        <ul class="menu-nav liquid-glass">
+            <div class="logo">CHENYI</div>
             <li><a href="#home">Home</a></li>
             <li><a href="#latest">Latest Project</a></li>
             <li><a href="#about">About</a></li>
@@ -30,21 +30,19 @@
     </nav>
 
     <section class="hero" id="home">
-        <div class="hero-box-a">
-            <div class="picture-box">
-                <img src="static/me.jpeg" alt="" title="sefruit Portofolio">
-            </div>
+        <div class="hero-box">
 
             <div class="text-box">
                 <h1>Hello Yivers,</h1>
+                <h2 class="text-highlight">KENALIN</h2>
                 <h5>Firson Siwan — Mahasiswa Teknik Informatika | Web Developer & AI Enthusiast</h5>
                 <p>
                     Saya fokus membangun website modern, mengeksplorasi kecerdasan buatan, dan mengasah kemampuan algoritma melalui proyek kuliah, kompetisi, dan hackathon. Saat ini sedang mengembangkan portofolio dan rencana freelance di bidang pengembangan web dan AI
                 </p>
                 <div class="cta">
-                    <div class="cta-btn"><a href="#projects">Projects</a></div>
-                    <div class="cta-btn"><a href="#about">About</a></div>
-                    <div class="cta-btn"><a href="#contact">Contact</a></div>
+                    <div class="cta-btn liquid-glass"><a href="#projects">Projects</a></div>
+                    <div class="cta-btn liquid-glass"><a href="#about">About</a></div>
+                    <div class="cta-btn liquid-glass"><a href="#contact">Contact</a></div>
                 </div>
             </div>
         </div>
@@ -90,8 +88,7 @@
     </section>
 
     <section class="about" id="about">
-        <div class="about-main">
-                
+        <div class="about-main liquid-glass">
             <div class="sefruit-text">
                 <h1>About</h1>
                 <p>
@@ -104,25 +101,28 @@
                         Saya berencana mengembangkan karier sebagai web developer dan AI engineer, sambil membangun portofolio proyek yang relevan. Ke depannya, saya ingin melanjutkan studi ke luar negeri dan berkontribusi pada pengembangan teknologi yang berdampak.
                 </p>
             </div>
-
-            <div class="profile-img">
+            <div class="short-info">
+                <h2>Info Singkat</h2>
+                <ul>
+                    <li><span><b>Lokasi: </b></span>Makassar, Indonesia</li>
+                    <li><span><b>Status: </b></span>Masih Belajar, belum siap bekerja</li>
+                </ul>
+                
+            </div>
+            <div class="about-contact">
+                <div class="sosial-btn">
+                    <div class="sosmed-btn"><a href=""><img src="static/github.png" alt=""></a></div>
+                    <div class="sosmed-btn"><a href=""><img src="static/instagram.png" alt=""></a></div>
+                    <div class="sosmed-btn"><a href=""><img src="static/linkedin.png" alt=""></a></div>
+                    <div class="sosmed-btn"><a href=""><img src="static/email.png" alt=""></a></div>
+                    
+                </div>
             </div>
         </div>
-        <div class="short-info">
-            <h2>Info Singkat</h2>
-            <ul>
-                <li><span><b>Lokasi: </b></span>Makassar, Indonesia</li>
-                <li><span><b>Status: </b></span>Masih Belajar, belum siap bekerja</li>
-            </ul>
 
-        </div>
-        <div class="about-contact">
-            <div class="sosial-btn">
-                <div class="sosmed-btn"><a href=""><img src="static/github.png" alt=""></a></div>
-                <div class="sosmed-btn"><a href=""><img src="static/instagram.png" alt=""></a></div>
-                <div class="sosmed-btn"><a href=""><img src="static/linkedin.png" alt=""></a></div>
-                <div class="sosmed-btn"><a href=""><img src="static/email.png" alt=""></a></div>
-
+        <div class="profile-img">
+            <div class="img-box ml liquid-glass">
+                <img src="static/me.jpeg" alt="sebuah gambar" class="crop-img">
             </div>
         </div>
 
@@ -217,6 +217,32 @@
             <div class="footer-content"></div>
         </div>
     </footer>
+
+    <script>
+    const navbar = document.getElementById("nav-bar");
+    let lastScrollTop = 0;
+    let ticking = false;
+
+    window.addEventListener("scroll", () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          const scrollTop = Math.max(0, currentScrollTop);
+
+          if (scrollTop > lastScrollTop && scrollTop > 60) {
+            navbar.style.top = "-90px";
+          } else {
+            navbar.style.top = "0";
+          }
+
+          lastScrollTop = scrollTop;
+          ticking = false;
+        });
+
+        ticking = true;
+      }
+    });
+  </script>
     
 </body>
 </html>
